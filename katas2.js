@@ -72,6 +72,26 @@ function factorial(num) {
 
 // crie a função fibonacci
 
+function fibonacci(position) {
+
+let fiboLast = 0; 
+
+let fiboCurrent = 1;
+
+let fiboArray = [];
+
+for(let i=0 ; i<= position ; i++){
+
+    fiboArray.push(fiboCurrent)
+
+    fiboCurrent = fiboCurrent + fiboLast;
+
+    fiboLast = fiboArray[i];
+}
+
+return fiboArray[position-1]
+
+}
 
 // descomente a linha seguinte para testar sua função
-// console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
+console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
