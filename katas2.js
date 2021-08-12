@@ -17,7 +17,7 @@ function multiply(num1 , num2) {
     let mult = 0;
     for (let i = 0; i<num2; i++) {
 
-        mult = mult + num1;
+        mult = add(mult, num1);
     }
     return mult;
 }
@@ -84,7 +84,7 @@ for(let i=0 ; i<= position ; i++){
 
     fiboArray.push(fiboCurrent)
 
-    fiboCurrent = fiboCurrent + fiboLast;
+    fiboCurrent = add(fiboCurrent, fiboLast)
 
     fiboLast = fiboArray[i];
 }
